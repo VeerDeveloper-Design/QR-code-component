@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Root */
+:root {
+   --white:  hsl(0, 0%, 100%);
+   --slate-300: hsl(212, 45%, 89%);
+   --slate-500: hsl(216, 15%, 48%);
+   --slate-900: hsl(218, 44%, 22%);
+}
+
+/* Body */
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    background-color: var(--slate-300);
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--slate-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Card */
+.card {
+    background-color: var(--white);
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.qr-img-container {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.qr-img {
+    max-width: 100%;
+    display: block;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 700;
+    color: var(--slate-900);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* Attributions */
+.attribution { 
+    position: absolute;
+    padding: 5px;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(200px);
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
